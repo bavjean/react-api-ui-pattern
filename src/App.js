@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// 17e1ce7203378146f8047eb9a4498b73
+class App extends Component {
+
+  componentDidMount() {
+    let url = "https://api.openbrewerydb.org/breweries?by_state=District_of_Columbia"
+    fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
+  }
+  
+  render () {
+    return (
+     <div>
+       <h1>Breweries in DC</h1>
+     </div>
+   );
+  }
 }
 
 export default App;
