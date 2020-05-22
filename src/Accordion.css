@@ -1,0 +1,24 @@
+h2 {
+  font-size: 1.25rem;
+}
+
+button {
+  background: #323032;
+  color: white;
+  font-size: 1.25rem;
+  padding: 15px 35px;
+  width: 600px;
+  text-align: left;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+    background: #5a565a;
+}
+
+.right {
+    float: right;
+}
