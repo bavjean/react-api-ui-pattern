@@ -3,7 +3,6 @@ import Header from "./Header";
 import Accordion from "./Accordion";
 import "./App.css";
 
-// 17e1ce7203378146f8047eb9a4498b73
 class App extends Component {
   constructor() {
     super();

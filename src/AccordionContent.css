@@ -7,6 +7,10 @@
   height: 150px;
 }
 
+.content {
+  width: 600px;
+}
+
 span {
   font-weight: bold;
 }

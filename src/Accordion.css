@@ -16,9 +16,9 @@ button:focus {
 }
 
 button:hover {
-    background: #5a565a;
+  background: #5a565a;
 }
 
 .right {
-    float: right;
+  float: right;
 }
