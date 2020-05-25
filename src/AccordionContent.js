@@ -16,7 +16,13 @@ export default function AccordionContent(props) {
         {props.brewery.state}, {props.brewery.postal_code}
       </p>
       <p>
-        <span>Website:</span> {props.brewery.website_url}
+        <a
+          href={props.brewery.website_url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {props.brewery.website_url}{" "}
+        </a>
       </p>
     </div>
   );
